@@ -1,73 +1,57 @@
-html, body {
+html, body{
    overflow: hidden;
    height: 100%;
    width: 100%;
-   background: rgba(240, 200, 255, 0.8);
 }
 
-.resizeGrip {
+#buttonBar{
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   height: 18px;
+   width: 100%;
+   display: block;
+   top: 0;
+   left: 0;
+   position: absolute;
+   background-color: #6441A5;
+   border-top-left-radius:0.5em;
+   border-top-right-radius:0.5em;
+   cursor: default;
+}
+
+.button{
+   float: right;
+   width: 14px;
+   height: 14px;
+   opacity: 0.5;
+   display: inline-block;
+   background-repeat: no-repeat;
+   margin-top: 2px;
+   margin-right: 3px;
+}
+
+.button:hover{
+   opacity: 1.0;
+}
+
+.x{
+   background-image: url('close-white.png');
+}
+
+.max{
+   background-image: url('max-white.png');
+}
+
+.min{
+   background-image: url('min-white.png');
+}
+
+.resizeGrip{
    background: lightblue;
    border: 1px solid blue;
    position: absolute;
 }
 
-#resizeGripTop {
-   height: 10px;
-   top: 0;
-   left: 10px;
-   right: 10px;
-   cursor: ns-resize;
-}
-
-#resizeGripBottom {
-   height: 10px;
-   bottom: 0;
-   left: 10px;
-   right: 10px;
-   cursor: ns-resize;
-}
-
-#resizeGripLeft {
-   width: 10px;
-   left: 0;
-   top: 10px;
-   bottom: 10px;
-   cursor: ew-resize;
-}
-
-#resizeGripRight {
-   width: 10px;
-   right: 0;
-   top: 10px;
-   bottom: 10px;
-   cursor: ew-resize;
-}
-
-#resizeGripTopLeft {
-   width: 10px;
-   height: 10px;
-   top: 0;
-   left: 0;
-   cursor: nwse-resize;
-}
-
-#resizeGripBottomLeft {
-   width: 10px;
-   height: 10px;
-   bottom: 0;
-   left: 0;
-   cursor: nesw-resize;
-}
-
-#resizeGripTopRight {
-   width: 10px;
-   height: 10px;
-   top: 0;
-   right: 0;
-   cursor: nesw-resize;
-}
-
-#resizeGripBottomRight {
+#resizeGripBottomRight{
    width: 10px;
    height: 10px;
    bottom: 0;
@@ -75,22 +59,26 @@ html, body {
    cursor: nwse-resize;
 }
 
-#content {
+#content{
    position: absolute;
-   top:10px;
-   bottom: 10px;
-   left: 10px;
-   right: 10px;
+   top: 18px;
+   bottom: 0;
+   left: 0;
+   right: 0;
    padding: 10px;
+   background-color: rgb(206, 206, 206);
+   /*#6441A5;*/
+/*border-bottom-right-radius:0.5em;*/
+   border-bottom-left-radius:0.5em;
 }
 
 .chat{
    font-family: Helvetica, Arial, sans-serif;
    margin: 0 auto;
-   width: 600px;
+   /*width: 600px;*/
    position: fixed;
    left: 0px;
-   top: 85px;
+   top: 33px;
    right: 0px;
    bottom: 15px;
    overflow: hidden;

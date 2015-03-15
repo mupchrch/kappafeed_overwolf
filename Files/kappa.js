@@ -1,16 +1,17 @@
-var kappaRegex = /\bKappa\b/g;
+/*var kappaRegex = /\bKappa\b/g;
 var kappaCount = 0;
-var kpmArray = []
+var kpmArray = []*/
 var msgCount = 0;
 var maxNumMsg = 40;
 
 $(function() {
-    var chat = $('.chat'),
-    printer = $('.messages', chat),
-    printerH = printer.innerHeight(),
-    preventNewScroll = false;
+    var chat = $('.chat');
+    var printer = $('.messages', chat);
+    var preventNewScroll = false;
 
     function scrollBottom(){
+        var printerH = printer.innerHeight();
+
         if(!preventNewScroll){
             printer.stop().animate( {scrollTop: printer[0].scrollHeight - printerH  }, 600, 'swing', function(){
                 if(msgCount > maxNumMsg){
@@ -38,10 +39,10 @@ $(function() {
 
         ws.onopen = function() {
             msgCount = 0;
-            kappaCount = 0;
-            kpmArray = [];
+            //kappaCount = 0;
+            //kpmArray = [];
             //window.setInterval(kappaPerMin, 3000);
-            printer.append('Welcome to kappafeed.');
+            printer.append('<div class="msgDiv">Welcome to kappafeed.</div>');
             scrollBottom();
         };
 
