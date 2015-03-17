@@ -21,3 +21,11 @@ function closeWindow(){
         }
     });
 };
+
+function minWindow(){
+    overwolf.windows.getCurrentWindow(function(result){
+        if (result.status=="success"){
+            overwolf.windows.minimize(result.window.id);
+        }
+    });
+};

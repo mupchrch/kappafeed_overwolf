@@ -30,26 +30,23 @@
    background-image: url('close-white.png');
 }
 
-.max{
-   background-image: url('max-white.png');
-}
-
 .min{
    background-image: url('min-white.png');
 }
 
 .resizeGrip{
-   background: lightblue;
-   border: 1px solid blue;
-   position: absolute;
+   background-image: url('resize.png');
 }
 
 #resizeGripBottomRight{
-   width: 10px;
-   height: 10px;
+   width: 14px;
+   height: 14px;
+   cursor: nwse-resize;
+   background-repeat: no-repeat;
+   position: absolute;
    bottom: 0;
    right: 0;
-   cursor: nwse-resize;
+   opacity: 0.5;
 }
 
 #content{
