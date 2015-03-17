@@ -63,3 +63,12 @@
 .chat-ow{
    top: 33px;
 }
+
+div.kpm-ow{
+   float: left;
+   font-size: 12px;
+   display: inline-block;
+   font-weight: bold;
+   color: white;
+   padding-left: 2px;
+}
