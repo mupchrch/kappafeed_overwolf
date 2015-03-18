@@ -14,19 +14,12 @@
 		"start_window":"MainWindow",
 		"windows":{
 			"MainWindow":{
-					"file":"Files/index.html",
-					"transparent":true,
-					"resizable":true,
-					"size":{"width":500, "height":550},
-					"min_size":{"width":350, "height":200}
-				},
-			"SubWindow":{
-					"file":"Files/subwindow.html",
-					"transparent":true,
-					"resizable":false,
-					"size":{"width":400, "height":300},
-					"in_game_only":true
-				}
+				"file":"Files/index.html",
+				"transparent":true,
+				"resizable":true,
+				"size":{"width":500, "height":550},
+				"min_size":{"width":350, "height":200}
+			}
 		}
 	}
 }
