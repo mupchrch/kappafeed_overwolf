@@ -1,0 +1,5 @@
+<h3>Monitor the KPM in chat!<h3>
+<br>
+"View the top Kappa messages. Messages containing Kappa faces are consolidated into our feed from the chats of the top Twitch streams. Messages are delivered unaltered from the source; please take any issues up with the intelligent people in Twitch chat. Kappa."
+<br>
+<a href="http://kappafeed.tv">http://kappafeed.tv</a>
